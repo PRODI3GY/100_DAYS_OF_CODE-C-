@@ -58,7 +58,7 @@ PROBLEMS FACED.
 
 	c.) Promotion - This is a type of implicit type conversion when a value of a smaller data type is changed to a larger data type to prevent the loss of data. For example when using a short integer and the number exceeds the capacity of which a short integer can store it is converted to a long integer to preserve the precision/accuracy. 
 
-- So what happened in my case was type inference and the compiler was wrong due to not enough information about the value was provided only the format specifier provided the data needed which is sometimes not enough, to fix this problem I had to type cast the type of the value before the number. This is essentially naming the datatype of the value you are using. This is of course another rabbit hole that I will dive into in Day 3.
+- So what happened in my case was type inference and the compiler was wrong due to not enough information about the value was provided only the format specifier provided the data needed which is sometimes not enough, to fix this problem I had to 'type cast'.This is writing the datatype of the value in brackets before the value itself. For example '(unsigned int)4294967295'. This is essentially naming the datatype of the value you are using. This is of course another rabbit hole that I will dive into in Day 3.
 
 
 ---program name is 'DAY2.c' found in the DAY-2 directory.
