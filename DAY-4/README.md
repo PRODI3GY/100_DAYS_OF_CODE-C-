@@ -6,9 +6,9 @@ OBJECTIVES
 
 2. Learn about various operators that can be used in c.
 
-3. Learn about if else statement.
+3. Learn about if statement.
 
-4. Write a simple program that displays all the type of variables in C.
+4. Write a simple program that displays a variable of every datatype in C.
 
 5. Write a simple program that show various operators in use.
 
@@ -23,7 +23,7 @@ WHAT I HAVE LEARNED AND DONE
 
 - Initialization is giving your variable a value. You can do both declaration and initialization on the same line or you can declare a variable then you can give it a value later on. Declaration is mostly used when someone hasn't figured out the value to be used or expecting the value from another source such as input. 
  
-- When you declare a variable, the program allocates space of the variable according to the data type used, for example a float variable would be allocated 4 bytes. 
+- When you declare a variable, the program allocates space of the variable according to the data type used, for example a float variable would be allocated 4 bytes of memory space. 
 
 2. Constants are also 'containers' used to store data but the difference between a constant and a variable is that a constant's value cannot be changed compared to that of a variable. When using a variable, the value can be changed later in the program by initialization again but the same cannot be said about constants. If you want to change the value of a constant you have to go to the same place that you initialized the constant to change it's value.
 
@@ -45,13 +45,15 @@ WHAT I HAVE LEARNED AND DONE
 	e.) Logical operators.
 	
 a.) Arithmetic Operators - These are the operators used for mathematical operations such as division, multiplication, addition and substraction.
-	- * (Multiplication)
-	- + (Addition)
-	- - (Substraction)
-	- / (Division)
-	- % (Modulus) - It is used to find the remainder of a number after division. For example '17 % 5' will give you the answer 2. The modulus operator finds the remainder of the number on the left divided by the number on the right. 
-	- ++ (Increment) - It is used to add 1(incrementing) to a value.
-	- -- (Decrement) - It is used to reduce 1(decrementing) to a value.
+
+- For example,
+- * (Multiplication)
+- + (Addition)
+- - (Substraction)
+- / (Division)
+- % (Modulus) - It is used to find the remainder of a number after division. For example '17 % 5' will give you the answer 2. The modulus operator finds the remainder of the number on the left divided by the number on the right. 
+- ++ (Increment) - It is used to add 1(incrementing) to a value.
+- -- (Decrement) - It is used to reduce 1(decrementing) to a value.
 
 b.) Bitwise Operators - This operators are used to perform operations on individual bits. To understand how bitwise operations work, I needed to understand the concept of logic gates(AND,OR,XOR,NOT).
 
@@ -117,3 +119,93 @@ e.) Logical Operators - These are operators used to test if a condition is true 
 	- '&&' - This operator(AND) evaluates if both expressions evaluate to true, if they are true it will result to true but if either of the expressions are false it will result to false.
 	- '||' - This operator(OR) evaluates if either of the expressions evaluate to true, if that's the case it will result to true but if both are false it will result to false.
 	- '!' - This operator(NOT) negates the operation, reverses the result, if it is true it will return false. 
+
+4. IF STATEMENT
+ 
+- This is known as a conditional statement or a control structure in programming. A conditional statement is a structure that allows you to control the flow of your program based on certain conditions or critea. This means that you can give this statement certain options to choose from depending on a result or an outcome, in short they can make decisions based on criteria given to them.
+- An if statement evaluates a condition if the condition is true a block of code is executed, if not the block of code is skipped. If you wanted another block of code to be executed if the condition is false you can use an if-else statement which executes a certain block of code if a condition is true or another one if the condition is false.
+
+
+CHALLENGES FACED
+
+1. When writing the program to print every type of variable, there was a warning by the gcc compiler that would not allow the program to print the unsigned long long int despite using the correct format specifier(%llu). The problem was the compiler, any integer literal without a suffix is intepreted as type int with the compiler. A suffix is just a letter(s) you put after a number to specify the type of the number, so for the program to print the unsigned long long int, I had to add ULL at the end of the number. I prefer this than type casting.
+
+2. I also noticed the double data type was only printing 8 numbers despite giving it a value that contains 16 numbers. This time the problem was the printf function. Despite using the correct format specifier for a double(%lf) and using the correct suffix(D) only 8 numbers were being printed on the screen. I later found out that when you use the printf function to print a large decimal number it rounds off the number for display, however you can specify the precision in the format specifier(Mentioning how many numbers you would like to be displayed in the output). So for this problem I just put (%.16lf) and the problem was solved.
+
+- Then I started thinking what if I had a large number but did not want to count the number in order to know what precision to set when printing the number, what would I do?. I found out that you can use the format specifier (%g) which will adapt with the situation. It works with any float data type as well as integers but when you use it with integers it does not offer any added adavantage so it is better to use the default ones.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

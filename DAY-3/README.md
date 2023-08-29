@@ -1,6 +1,7 @@
 ---DAY-3-----Summary
 
 OBJECTIVES.
+
 1. Learn more about type casting.
 
 2. Learn about the ascii table.
@@ -44,3 +45,7 @@ NOTE- ASCII does not represent all characters of all languages but UTF-8(another
 3. puts  - This is a function in C that is used to print out a string or a sequence of characters to the screen and appends a new line character at the end. This means that anything printed after a string printed by puts will go to a new line. puts belongs to the standard input output library so if you want to use puts you have to add '#include <stdio.h>' in your code.
 
 4. putchar - This is a function in C that is used to print out a single character to the screen, it is also part of stdio. I returns EOF if an error occurs. EOF stands for End Of File but it can be used as an error indicator. There is more to EOF which I will dive into in day 4. In other functions like printf and puts you can add a newline characer at the end to format your code but in putchar you cannot since it accepts one and only one character and a newline is counted as a character so if you want to add a newline character you have to add another putchar function to do so.(I didn't know '\n' counts as a character so dumb).
+
+PROBLEMS FACED
+- Suprisingly none!
+
