@@ -61,7 +61,7 @@ b.) Bitwise Operators - This operators are used to perform operations on individ
 
 - A logic gate can have one or multiple inputs but can only produce one output, for example a NOT gate can only receive one binary input and the output produced is the opposite of the input for example if the input was a 1(ONE) the output would be a 0(ZERO). An AND gate on the the other hand can receive 2,3,4 or more inputs according to the design, it produces output after checking conditions(The condition in AND gates is if all inputs are 1s(ONEs) the output will be also a 1(ONE), but if any of the input is a 0(ZERO) the output will be a 0(ZERO)), the more input it has the more conditions it checks to produce output. For example an AND gate that receives 2 binary inputs that are both 1s(ONEs) would produce an output of a 1(ONE) but if the one of the inputs is a 0(ZERO) the output would be a 0(ZERO).
 
-- A one or a zero is stored as a bit in computers which stands for binary digit. Initially a bit represents 2 possibilities which is a ZER or a ONE, if you add another bit(2 bits) the possibilities increase to 4. So the more bits you add, you create larger units of data and the higher the number possibilities that can be represented. This is the basis of how computers store and process data internally.
+- A one or a zero is stored as a bit in computers which stands for binary digit. Initially a bit represents 2 possibilities which is a ZERO or a ONE, if you add another bit(2 bits) the possibilities increase to 4. So the more bits you add, you create larger units of data and the higher the number possibilities that can be represented. This is the basis of how computers store and process data internally.
 
 - A group of 8 bits is known as a byte, a byte possesses enough combinations to represent a wide range of characters, symbols and numbers(ASCII makes more sense now), a group of bytes can represent a lot more.(back to bitwise operators).
 
@@ -110,7 +110,8 @@ d.) Comparison Operators(Relational) - This are operators that are used to compa
 	- '==' - This is the equals to operator which means the 'same as'. It is used to show two values are equal to each other.
 	- '!=' - This is the not equal to operator. It is used to show inequality between two values.
 	- '>'  - This is the greater than operator. It is used to show the value on the left is greater than the value on the right.
-	- '<'  - This is the less than operator. It is used to show the value on the left of the sign is less than the one on the right.	- '>=' - This is the greater than or equal to operator. It is used to show the value on the left is greater than or equal to the one on the right.(2 possibilities)
+	- '<'  - This is the less than operator. It is used to show the value on the left of the sign is less than the one on the right.
+	- '>=' - This is the greater than or equal to operator. It is used to show the value on the left is greater than or equal to the one on the right.(2 possibilities)
 	- '<=' - This is the less than or equal to operator. It is used to show the value on the left is less than or equal to the one on the right.
 
 e.) Logical Operators - These are operators used to test if a condition is true or false against operands used.
@@ -128,11 +129,11 @@ e.) Logical Operators - These are operators used to test if a condition is true 
 
 CHALLENGES FACED
 
-1. When writing the program to print every type of variable, there was a warning by the gcc compiler that would not allow the program to print the unsigned long long int despite using the correct format specifier(%llu). The problem was the compiler, any integer literal without a suffix is intepreted as type int with the compiler. A suffix is just a letter(s) you put after a number to specify the type of the number, so for the program to print the unsigned long long int, I had to add ULL at the end of the number. I prefer this than type casting.
+1. When writing the program to print every type of variable, there was a warning by the gcc compiler that would not allow the program to print the unsigned long long int despite using the correct format specifier(%llu). The problem was the compiler, any integer literal without a suffix is intepreted as type int with the compiler. A suffix is just a letter(s) you put after a number to specify the datatype of the number, so for the program to print the unsigned long long int, I had to add ULL at the end of the number. I prefer this than type casting.
 
 2. I also noticed the double data type was only printing 8 numbers despite giving it a value that contains 16 numbers. This time the problem was the printf function. Despite using the correct format specifier for a double(%lf) and using the correct suffix(D) only 8 numbers were being printed on the screen. I later found out that when you use the printf function to print a large decimal number it rounds off the number for display, however you can specify the precision in the format specifier(Mentioning how many numbers you would like to be displayed in the output). So for this problem I just put (%.16lf) and the problem was solved.
 
-- Then I started thinking what if I had a large number but did not want to count the number in order to know what precision to set when printing the number, what would I do?. I found out that you can use the format specifier (%g) which will adapt with the situation. It works with any float data type as well as integers but when you use it with integers it does not offer any added adavantage so it is better to use the default ones.
+- Then I started thinking what if I had a large number but did not want to count the number in order to know what precision to set when printing the number, what would I do?. I found out that you can use the format specifier (%g) which will adapt with the situation. It works with any float data type as well as integers but when you use it with integers it does not offer any added adavantage so it is better to use the default ones for integers(%d,%i,%o,%x).
  
 
 
