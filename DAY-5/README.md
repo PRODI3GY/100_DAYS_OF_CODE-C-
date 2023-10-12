@@ -37,4 +37,6 @@ WHAT I HAVE LEARNED AND DONE
 PROBLEMS FACED.
 1. Understanding jump tables was kind of a harsh one for me because it contained some advanced topics that I haven't covered yet, but hopefully as I advance and understand those topics then try to create a jump table then my understanding will grow and it will become more clear.
 
+2. This is just a by the way that I learned after accidentally leaving a semi-colon in the for loop after the ')' bracket. A semi-colon shows the end of a statement meaning the code in the curly braces below the for loop did not function according to the conditions set in the for loop but still the printf function that was to be executed according to the conditions of the for loop functioned despite being inside curly braces, apparently curly braces are used to group statements together into one code block, that is why the printf function still functioned.
+
 **ALL CODE SAMPLES FOR THE OBJECTIVES ARE IN THE SAME DIRECTORY WITH THE README.
