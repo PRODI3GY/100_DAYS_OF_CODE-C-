@@ -3,11 +3,11 @@
 OBJECTIVES
 1. Learn about functions.
 2. Learn about arrays.
-3. Learn about scanf.
-4. Learn about user input.
-5. Create 3 functions, one that takes variables as arguments, one that takes arrays as an argument, and one that does not take any argument.
-6. Create an array and a loop that sorts through that array and print each element.
-7. Create a function that sorts through an array and prints each element in reverse order.
+3. Learn about scanf and user input.
+4. Create 3 functions, one that takes variables as arguments, one that takes arrays as an argument, and one that does not take any argument.
+5. Create an array and a loop that sorts through that array and print each element.
+6. Create a function that sorts through an array and prints each element in reverse order.
+7. Create a program that accepts user input and outputs it.
 
 WHAT I HAVE LEARNED AND DONE.
 1. FUNCTIONS - Functions are blocks of code that contain instructions that are used to execute a specific task or a set of tasks.
@@ -27,9 +27,24 @@ WHAT I HAVE LEARNED AND DONE.
              - A data structure is a way of organizing and storing data in a computer so it can be accessed and manipulated efficiently.
              - In C an array can only store multiple values of the same type due to it's static nature unlike in other languages where an array can store different types of data.
              - The values stored in an array are known as elements.
+             - Arrays are declared by specifying a data type, giving it a name and then using square brackets to specify the number of elements to be stored. Specifying the number of elements stored is not necessary.
              - Multidimensional arrays are arrays inside other arrays.
              - One of the advantages of arrays in C is that they are memory efficient because they are stored in contiguous memory locations which basically means the elements(values) in the array are stored sequentially(one after the other) in memory which results in a simple and efficient way of managing memory.
              - Arrays are also advantageous when storing collections of data which makes it easy to sort and search through them.
              - Individual elements in an array can be accessed by "indexing".
              - Indexing is a method used to retrieve elements in an array. When an element is stored in an array, it is assigned a number according to the position it is stored, if it is the first element of the array, it's index is 0, the second element's index is 1. This is the principle used in array indexing, so if you want to retrieve the 1st element of an array you have to specify index 0.
-             - Since an array stores only elements of a specific data type can one type cast to bypass this? or is there another way to bypass this? we need to investigate how an array is implemented in C. 
+            * - Since an array stores only elements of a specific data type can one type cast to bypass this? or is there another way to bypass this? we need to investigate how an array is implemented in C. 
+
+3. SCANF     - Scanf is a function used to take input from the user or from a file.
+             - Scanf takes 2 arguments, a string and the address where the input will be stored.
+             - The 1st argument can be a format specifier which tells scanf what kind of input it is expecting.
+             - You get the memory address of where a value will be stored by adding '&' before the variable name where the value will be stored. For example &number where 'number' is the name of a variable. '&number' refers to the memory address of where the value stored by number resides/stays.
+             - A memory address is just an address that a computer gives data when it is stored to know where specific data stays.
+             - There are 2 kind of specifiers in C, type specifiers and conversion/format specifiers.
+             - A type specifier is a keyword used to specify the data type to be used. A keyword such as 'int' or 'float' to specify an integer and a float datatype.
+             - Type specifiers are used to declare variables, arrays, functions and even to define the return type of functions among other use cases.
+             - A conversion/format specifier is symbolized by a '%' sign and a letter afterwards to specify the format of data expected to be used.
+             - A format specifier is used in functions such as printf and scanf to define the kind of data expected.
+
+ PROBLEMS FACED
+
