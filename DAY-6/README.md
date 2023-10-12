@@ -5,7 +5,9 @@ OBJECTIVES
 2. Learn about arrays.
 3. Learn about scanf.
 4. Learn about user input.
-5. Write 3 functions, one that takes variables as arguments, one that takes arrays as an argument, and one that does not take any argument.
+5. Create 3 functions, one that takes variables as arguments, one that takes arrays as an argument, and one that does not take any argument.
+6. Create an array and a loop that sorts through that array and print each element.
+7. Create a function that sorts through an array and prints each element in reverse order.
 
 WHAT I HAVE LEARNED AND DONE.
 1. FUNCTIONS - Functions are blocks of code that contain instructions that are used to execute a specific task or a set of tasks.
@@ -21,5 +23,13 @@ WHAT I HAVE LEARNED AND DONE.
              - When defining the function you write the code that is to be executed when someone summons the function.
              - It is recommended that one should separate the declaration and definition for code optimization but one can still be able to declare and define a function in the same place.
 
-2. ARRAYS - 
-
+2. ARRAYS    - Arrays are data structures that are used to store multiple values, basically an array is a variable capable of storing multiple values instead of one value like a variable.
+             - A data structure is a way of organizing and storing data in a computer so it can be accessed and manipulated efficiently.
+             - In C an array can only store multiple values of the same type due to it's static nature unlike in other languages where an array can store different types of data.
+             - The values stored in an array are known as elements.
+             - Multidimensional arrays are arrays inside other arrays.
+             - One of the advantages of arrays in C is that they are memory efficient because they are stored in contiguous memory locations which basically means the elements(values) in the array are stored sequentially(one after the other) in memory which results in a simple and efficient way of managing memory.
+             - Arrays are also advantageous when storing collections of data which makes it easy to sort and search through them.
+             - Individual elements in an array can be accessed by "indexing".
+             - Indexing is a method used to retrieve elements in an array. When an element is stored in an array, it is assigned a number according to the position it is stored, if it is the first element of the array, it's index is 0, the second element's index is 1. This is the principle used in array indexing, so if you want to retrieve the 1st element of an array you have to specify index 0.
+             - Since an array stores only elements of a specific data type can one type cast to bypass this? or is there another way to bypass this? we need to investigate how an array is implemented in C. 
