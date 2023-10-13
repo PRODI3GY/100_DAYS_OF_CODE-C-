@@ -19,9 +19,10 @@ WHAT I HAVE LEARNED AND DONE.
              - The arguments that someone provides should be the same as the number of parameters specified.
              - It is not a must for a function to have parameters, it can just contain code to be executed and when the function is called it will not be must for one to give it arguments.
              - One can also specify the type of value that is to be returned after a function does it's job.
+             - Variables declared in a function only exists in that function and cannot be used anywhere else outside that function.
              - There is two parts when creating a function, there is the declaration and definition. When declaring the function you write the name of the function, the parameters and the return type the function should return.
              - When defining the function you write the code that is to be executed when someone summons the function.
-             - It is recommended that one should separate the declaration and definition for code optimization but one can still be able to declare and define a function in the same place.
+             - It is recommended that one should separate the declaration and definition for code optimization but one can still be able to declare and define a function in the same place
 
 2. ARRAYS    - Arrays are data structures that are used to store multiple values, basically an array is a variable capable of storing multiple values instead of one value like a variable.
              - A data structure is a way of organizing and storing data in a computer so it can be accessed and manipulated efficiently.
@@ -33,9 +34,12 @@ WHAT I HAVE LEARNED AND DONE.
              - Arrays are also advantageous when storing collections of data which makes it easy to sort and search through them.
              - Individual elements in an array can be accessed by "indexing".
              - Indexing is a method used to retrieve elements in an array. When an element is stored in an array, it is assigned a number according to the position it is stored, if it is the first element of the array, it's index is 0, the second element's index is 1. This is the principle used in array indexing, so if you want to retrieve the 1st element of an array you have to specify index 0.
-            * - Since an array stores only elements of a specific data type can one type cast to bypass this? or is there another way to bypass this? we need to investigate how an array is implemented in C. 
+            * - Since an array stores only elements of a specific data type can one type cast to bypass this? or is there another way to bypass this? I will investigate if there is a way to bypass this and a good place to start is checking how an array is implemented in C(If I can understand it lol). 
 
-3. SCANF     - Scanf is a function used to take input from the user or from a file.
+3. SCANF     - User input is data given by the person using the program.
+             - User input can be requested by the program so often you have to find a way to create this interaction, for example you can output text on the screen to ask a user to give you certain data after the user does something with your program or initially when the user runs your program.
+             - You have to restrict the type of data the program receives from the user because this is usually the origin of vulnerabilities that can be used to hack your program.
+             - Scanf is a function used to take input from the user or from a file.
              - Scanf takes 2 arguments, a string and the address where the input will be stored.
              - The 1st argument can be a format specifier which tells scanf what kind of input it is expecting.
              - You get the memory address of where a value will be stored by adding '&' before the variable name where the value will be stored. For example &number where 'number' is the name of a variable. '&number' refers to the memory address of where the value stored by number resides/stays.
@@ -46,5 +50,11 @@ WHAT I HAVE LEARNED AND DONE.
              - A conversion/format specifier is symbolized by a '%' sign and a letter afterwards to specify the format of data expected to be used.
              - A format specifier is used in functions such as printf and scanf to define the kind of data expected.
 
- PROBLEMS FACED
+ CHALLENGES FACED
+1. This is not a challenge but something I have learned when tackling objective 4, I created a function that adds 2 numbers and the arguments are stored in 2 integer variables and also the function returns an integer value, I realized you can juggle with types within a function, you can make the function return a float but put in integer arguments and it would still work.- I realized that after calling the addition function in the main function the program would compile but I did not get any output, so I had to use the printf function in the main function when calling the addition function, it got me thinking to add the printf function in the code of the addition function so that when I call the function it would just print the output on the screen, but then I learned that, that beats one of the purposes of functions which is reusability, if you need to use the output of the function in the future you would need to change the function which would cause a hassle if it was a large program.
+ - There is also something that is called coupling in software which basically means dependency between different components of a program.
+ - If components are more dependent on each other the program would be less flexible, hard to maintain and adding new features would also be harder.
+ - If components are less dependent it would be the latter but it would be more complex and cause the program to have significantly more lines of code.
+
+2. This is also something that I have learned when tackling objective 4, when you declare and define a function before the main function, it is considered bad practice since you may have multiple functions before you can see the main function which is also very messy, but when you write functions below the main function and try to use them in the main function the program would not recognize it bringing an error "implicit....." the solution to this is declaring the function(specifying the return type, name of the function and parameters if there are any) before the main function which tells the compiler that the function exists then write the function fully below the main function which involves declaring the function again and defining the instructions that it should perform. 
 
