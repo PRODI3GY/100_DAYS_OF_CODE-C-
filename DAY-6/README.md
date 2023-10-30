@@ -59,3 +59,6 @@ WHAT I HAVE LEARNED AND DONE.
 2. This is also something that I have learned when tackling objective 4, when you declare and define a function before the main function, it is considered bad practice since you may have multiple functions before you can see the main function which is also very messy, but when you write functions below the main function and try to use them in the main function the program would not recognize it bringing an error "implicit....." the solution to this is declaring the function(specifying the return type, name of the function and parameters if there are any) before the main function which tells the compiler that the function exists then write the function fully, below the main function which involves declaring the function again and defining the instructions that it should perform. 
 
 3. I also made an integer array but put characters as the values, but when printing the characters it still worked. It worked because the characters are stored as their ASCII representations which are numbers(integers), but it is not advisable to do this in a real program unless that is part of it's functionality.
+
+
+TESTING SSH
