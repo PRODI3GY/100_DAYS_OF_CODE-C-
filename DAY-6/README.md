@@ -4,9 +4,9 @@ OBJECTIVES
 1. Learn about functions.
 2. Learn about arrays.
 3. Learn about scanf and user input.
-4. Create 3 functions, one that takes variables as arguments, one that takes arrays as an argument, and one that does not take any argument.
-5. Create an array and a loop that sorts through that array and print each element.
-6. Create a function that sorts through an array and prints each element in reverse order.
+4. Create 3 functions, one that takes variables as arguments, one that takes an array as an argument and prints all of it's elements, and one that does not take any argument.
+5. Create an array and a loop that loops through that array and print each element.
+6. Create a function that loops through an array and prints each element in reverse order.
 7. Create a program that accepts user input and outputs it.
 
 WHAT I HAVE LEARNED AND DONE.
@@ -60,5 +60,6 @@ WHAT I HAVE LEARNED AND DONE.
 
 3. I also made an integer array but put characters as the values, but when printing the characters it still worked. It worked because the characters are stored as their ASCII representations which are numbers(integers), but it is not advisable to do this in a real program unless that is part of it's functionality.
 
+4. I have learned about the 'sizeof' operator which is used to get the size of it's argument in bytes and I ran into a problem where it would not print the size because of the wrong format specifier used when expecting the result from 'sizeof', turns out 'sizeof' operator only returns values of datatype "size_t" which is an unsigned integer type because sizes are not expected to be negative.
 
-TESTING SSH
+
