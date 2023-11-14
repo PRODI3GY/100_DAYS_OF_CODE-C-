@@ -7,6 +7,6 @@ int addition(int a, int b)
 }
 int main()
 {
-	printf("%d",addition(6,9));
+	printf("%d\n",addition(6,9));
 	return 0;
 }

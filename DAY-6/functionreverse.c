@@ -1,19 +1,19 @@
 #include <stdio.h>
 
+void reverse_function(int array[], int size);
+
 int main(void)
 {
-	int array_as_argument(int array[])
-	{
-		int size_of_array = sizeof((int)array) / sizeof(int);
-
-		for(int i = 0; i <= size_of_array; i++)
-		{
-			printf("%d\n", array[i]);
-		}
-	}
-
-	int luck[]={1,2,3,4,5};
-	array_as_argument(luck);
-
+	int numbers[]={0,1,2,3,4,5};
+	int y = sizeof(numbers) / sizeof(int);
+	reverse_function(numbers,y);
 	return 0;
+}
+
+void reverse_function(int array[], int size)
+{
+	for (int i = size - 1; i >= 0; i--)
+	{
+		printf("%d\n",array[i]);
+	}
 }

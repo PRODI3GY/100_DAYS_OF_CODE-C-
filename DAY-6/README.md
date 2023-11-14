@@ -1,5 +1,4 @@
 ------DAY-6------SUMMARY
-
 OBJECTIVES
 1. Learn about functions.
 2. Learn about arrays.
@@ -23,6 +22,8 @@ WHAT I HAVE LEARNED AND DONE.
              - There is two parts when creating a function, there is the declaration and definition. When declaring the function you write the name of the function, the parameters and the return type the function should return.
              - When defining the function you write the code that is to be executed when someone summons the function.
              - It is recommended that one should separate the declaration and definition for code optimization but one can still be able to declare and define a function in the same place
+             - Passing by value - means copying a value to a function so that it can be used in the operations of the function, if a variable is storing the value outside the function, the value in the variable outside the function won't be affected in any way by the operations inside the function.
+             - Passing by reference - means referring to a value in a program to be used by a function. If a value is storing the value outside the function the operations of the function will affect the value in the variable because now the value is not being copied to the function rather it is being referred to.
 
 2. ARRAYS    - Arrays are data structures that are used to store multiple values, basically an array is a variable capable of storing multiple values instead of one value like a variable.
              - A data structure is a way of organizing and storing data in a computer so it can be accessed and manipulated efficiently.
@@ -51,6 +52,7 @@ WHAT I HAVE LEARNED AND DONE.
              - A format specifier is used in functions such as printf and scanf to define the kind of data expected.
 
  CHALLENGES FACED
+
 1. This is not a challenge but something I have learned when tackling objective 4, I created a function that adds 2 numbers and the arguments are stored in 2 integer variables and also the function returns an integer value, I realized you can juggle with types within a function, you can make the function return a float but put in integer arguments and it would still work.- I realized that after calling the addition function in the main function the program would compile but I did not get any output, so I had to use the printf function in the main function when calling the addition function, it got me thinking to add the printf function in the code of the addition function so that when I call the function it would just print the output on the screen, but then I learned that, that beats one of the purposes of functions which is reusability, if you need to use the output of the function in the future you would need to change the function which would cause a hassle if it was a large program.
  - There is also something that is called coupling in software which basically means dependency between different components of a program.
  - If components are more dependent on each other the program would be less flexible, hard to maintain and adding new features would also be harder.
@@ -62,4 +64,4 @@ WHAT I HAVE LEARNED AND DONE.
 
 4. I have learned about the 'sizeof' operator which is used to get the size of it's argument in bytes and I ran into a problem where it would not print the size because of the wrong format specifier used when expecting the result from 'sizeof', turns out 'sizeof' operator only returns values of datatype "size_t" which is an unsigned integer type because sizes are not expected to be negative.
 
-
+5. I learned that when you use an array as a parameter in a function, the moment you call that function and use an array as the argument to that function, the array decays to a pointer which means the array changes it's form to a pointer which points to the location in memory of the 1st element of the array. An array is stored in a contigous location in memory which means the elements are stored following each other in a block of memory, so when the array decays to a pointer you can still get the other elements easily in memory by moving one step forward to get the next element and so on and so forth.
