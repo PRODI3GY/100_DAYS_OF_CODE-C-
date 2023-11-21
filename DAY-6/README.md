@@ -6,7 +6,7 @@ OBJECTIVES
 4. Create 3 functions, one that takes variables as arguments, one that takes an array as an argument and prints all of it's elements, and one that does not take any argument.
 5. Create an array and a loop that loops through that array and print each element.
 6. Create a function that loops through an array and prints each element in reverse order.
-7. Create a program that accepts user input and outputs it.
+7. Create a program that accepts user input and outputs it.(In this case we will ask a user to input a series of numbers which will be stored in an array then the program will output it)
 
 WHAT I HAVE LEARNED AND DONE.
 1. FUNCTIONS - Functions are blocks of code that contain instructions that are used to execute a specific task or a set of tasks.
